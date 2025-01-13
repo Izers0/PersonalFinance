@@ -5,3 +5,10 @@ transactionCategory = input("What type of transaction was this: ") # later make 
 
 # Optional Information
 transactionDescription = input("Enter a description for the purchase e.g why you bought it: ")
+
+transactions = [{transactionDate},
+                {transactionAmount},
+                {transactionCategory},
+                {transactionDescription}]
+
+
