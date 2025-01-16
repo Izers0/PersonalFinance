@@ -26,23 +26,19 @@ while startProgram == "yes":
         #display the categories
         print(i, end = "    ") # end = "" stops the print statement adding a new line after each iteration
 
-    # allow a choice from the user
-    transactionCategory = input("\n").strip().lower()
+    print("\n")
 
-# need to fix case sensitivity
+    while True:
+        # Allow a choice from the user
+        userInput = input("")
+        transactionCategory = userInput.lower()
 
-    if transactionCategory == "Groceries":
-        print("\n")
-    elif transactionCategory == "Bills":
-        print("\n")
-    elif transactionCategory == "Pets":
-        print("\n")
-    elif transactionCategory == "Entertainment":
-        print("\n")
-    elif transactionCategory == "Car":
-        print("\n")
-    else:
-        print("Not a valid category")
+        # Normalize the categories list to lowercase for comparison
+        if transactionCategory in [category.lower() for category in categories]:
+            print("\nCategory selected:", userInput.capitalize())
+            break
+        else:
+            print("Invalid Category. Please try again.")
 
     # Optional Information
     transactionDescription = input("Enter a description for the purchase e.g why you bought it: \n")
