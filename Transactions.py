@@ -25,6 +25,7 @@ def getTransactionDetails():
     }
 
 
+# function to get the category of the users transaction
 def getTransactionCategory():
 
     print("From the list below, select a category for your transaction:")
