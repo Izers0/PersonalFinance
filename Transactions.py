@@ -66,5 +66,3 @@ while startProgram == "yes":
 
 # message to show the program has ended
 print("Goodbye")
-
-#testing git
